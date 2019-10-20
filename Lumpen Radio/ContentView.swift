@@ -8,11 +8,12 @@
 
 import SwiftUI
 
-let CUSTOM_FONT = "Akkurate-Regular"
-let RADIO_IMAGE_NAME = "RadioButton"
-let RADIO_BUTTON_MIN: CGFloat = 100
-let RADIO_BUTTON_MAX_IDEAL: CGFloat = 250
-let OPACITY_FACTOR = 0.77
+// Constants
+fileprivate let CUSTOM_FONT = "Akkurate-Regular"
+fileprivate let RADIO_IMAGE_NAME = "RadioButton"
+fileprivate let RADIO_BUTTON_MIN: CGFloat = 100
+fileprivate let RADIO_BUTTON_MAX_IDEAL: CGFloat = 250
+fileprivate let OPACITY_FACTOR = 0.77
 
 struct ContentView: View {
     var body: some View {
@@ -27,6 +28,8 @@ struct ContentView: View {
 }
 
 struct MainContent: View {
+    @ObservedObject var radio = Radio()
+    
     var body: some View {
         VStack(alignment: .center, spacing: 16.0) {
             Text("LUMPEN RADIO")
@@ -37,9 +40,9 @@ struct MainContent: View {
                 .font(.custom(CUSTOM_FONT, size: 26))
                 .foregroundColor(.white)
             HStack {
-                RadioButton()
+                RadioButton(radio: self.radio)
             }
-            Text("Tap above to tune in.")
+            Text(radio.bottomText)
                 .font(.custom(CUSTOM_FONT, size: 22))
                 .foregroundColor(.white)
                 .background(Color.blue)
@@ -49,11 +52,16 @@ struct MainContent: View {
 }
 
 struct RadioButton: View {
-    @State private var showingRadioAlert = false
+    @ObservedObject var radio: Radio
+    
+    init(radio: Radio) {
+        self.radio = radio
+    }
     
     var body: some View {
         Button(action: {
-            self.showingRadioAlert = true
+            // Turn radio on/off
+            self.radio.toggleRadio()
         }) {
             Image(RADIO_IMAGE_NAME)
             .resizable()
@@ -67,9 +75,6 @@ struct RadioButton: View {
         }
         .background(Color.white)
         .opacity(OPACITY_FACTOR)
-        .alert(isPresented: $showingRadioAlert) {
-            Alert(title: Text("Nice"), message: Text("You clicked on the radio!"), dismissButton: .default(Text("Dismiss")))
-        }
     }
 }
 
