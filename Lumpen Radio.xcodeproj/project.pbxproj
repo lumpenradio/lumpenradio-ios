@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C868FE235CD32800A4F077 /* AppDelegate.swift */; };
+		92C86901235CD32800A4F077 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86900235CD32800A4F077 /* SceneDelegate.swift */; };
+		92C86903235CD32800A4F077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86902235CD32800A4F077 /* ContentView.swift */; };
+		92C86905235CD32800A4F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86904235CD32800A4F077 /* Assets.xcassets */; };
+		92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86907235CD32800A4F077 /* Preview Assets.xcassets */; };
+		92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C86909235CD32800A4F077 /* LaunchScreen.storyboard */; };
+		92C86916235CD32900A4F077 /* Lumpen_RadioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86915235CD32900A4F077 /* Lumpen_RadioTests.swift */; };
+		92C86921235CD32900A4F077 /* Lumpen_RadioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86920235CD32900A4F077 /* Lumpen_RadioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92C86912235CD32900A4F077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C868F3235CD32800A4F077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C868FA235CD32800A4F077;
+			remoteInfo = "Lumpen Radio";
+		};
+		92C8691D235CD32900A4F077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C868F3235CD32800A4F077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C868FA235CD32800A4F077;
+			remoteInfo = "Lumpen Radio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92C868FB235CD32800A4F077 /* Lumpen Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumpen Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C868FE235CD32800A4F077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92C86900235CD32800A4F077 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		92C86902235CD32800A4F077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92C86904235CD32800A4F077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92C86907235CD32800A4F077 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92C8690A235CD32800A4F077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92C8690C235CD32800A4F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C86911235CD32900A4F077 /* Lumpen RadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lumpen RadioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C86915235CD32900A4F077 /* Lumpen_RadioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lumpen_RadioTests.swift; sourceTree = "<group>"; };
+		92C86917235CD32900A4F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C8691C235CD32900A4F077 /* Lumpen RadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lumpen RadioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C86920235CD32900A4F077 /* Lumpen_RadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lumpen_RadioUITests.swift; sourceTree = "<group>"; };
+		92C86922235CD32900A4F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92C868F8235CD32800A4F077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C8690E235CD32900A4F077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C86919235CD32900A4F077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92C868F2235CD32800A4F077 = {
+			isa = PBXGroup;
+			children = (
+				92C868FD235CD32800A4F077 /* Lumpen Radio */,
+				92C86914235CD32900A4F077 /* Lumpen RadioTests */,
+				92C8691F235CD32900A4F077 /* Lumpen RadioUITests */,
+				92C868FC235CD32800A4F077 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92C868FC235CD32800A4F077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92C868FB235CD32800A4F077 /* Lumpen Radio.app */,
+				92C86911235CD32900A4F077 /* Lumpen RadioTests.xctest */,
+				92C8691C235CD32900A4F077 /* Lumpen RadioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92C868FD235CD32800A4F077 /* Lumpen Radio */ = {
+			isa = PBXGroup;
+			children = (
+				92C868FE235CD32800A4F077 /* AppDelegate.swift */,
+				92C86900235CD32800A4F077 /* SceneDelegate.swift */,
+				92C86902235CD32800A4F077 /* ContentView.swift */,
+				92C86904235CD32800A4F077 /* Assets.xcassets */,
+				92C86909235CD32800A4F077 /* LaunchScreen.storyboard */,
+				92C8690C235CD32800A4F077 /* Info.plist */,
+				92C86906235CD32800A4F077 /* Preview Content */,
+			);
+			path = "Lumpen Radio";
+			sourceTree = "<group>";
+		};
+		92C86906235CD32800A4F077 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92C86907235CD32800A4F077 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92C86914235CD32900A4F077 /* Lumpen RadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				92C86915235CD32900A4F077 /* Lumpen_RadioTests.swift */,
+				92C86917235CD32900A4F077 /* Info.plist */,
+			);
+			path = "Lumpen RadioTests";
+			sourceTree = "<group>";
+		};
+		92C8691F235CD32900A4F077 /* Lumpen RadioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92C86920235CD32900A4F077 /* Lumpen_RadioUITests.swift */,
+				92C86922235CD32900A4F077 /* Info.plist */,
+			);
+			path = "Lumpen RadioUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92C868FA235CD32800A4F077 /* Lumpen Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C86925235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen Radio" */;
+			buildPhases = (
+				92C868F7235CD32800A4F077 /* Sources */,
+				92C868F8235CD32800A4F077 /* Frameworks */,
+				92C868F9235CD32800A4F077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lumpen Radio";
+			productName = "Lumpen Radio";
+			productReference = 92C868FB235CD32800A4F077 /* Lumpen Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92C86910235CD32900A4F077 /* Lumpen RadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C86928235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen RadioTests" */;
+			buildPhases = (
+				92C8690D235CD32900A4F077 /* Sources */,
+				92C8690E235CD32900A4F077 /* Frameworks */,
+				92C8690F235CD32900A4F077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C86913235CD32900A4F077 /* PBXTargetDependency */,
+			);
+			name = "Lumpen RadioTests";
+			productName = "Lumpen RadioTests";
+			productReference = 92C86911235CD32900A4F077 /* Lumpen RadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92C8691B235CD32900A4F077 /* Lumpen RadioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C8692B235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen RadioUITests" */;
+			buildPhases = (
+				92C86918235CD32900A4F077 /* Sources */,
+				92C86919235CD32900A4F077 /* Frameworks */,
+				92C8691A235CD32900A4F077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C8691E235CD32900A4F077 /* PBXTargetDependency */,
+			);
+			name = "Lumpen RadioUITests";
+			productName = "Lumpen RadioUITests";
+			productReference = 92C8691C235CD32900A4F077 /* Lumpen RadioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92C868F3235CD32800A4F077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Public Media Institute";
+				TargetAttributes = {
+					92C868FA235CD32800A4F077 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					92C86910235CD32900A4F077 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92C868FA235CD32800A4F077;
+					};
+					92C8691B235CD32900A4F077 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92C868FA235CD32800A4F077;
+					};
+				};
+			};
+			buildConfigurationList = 92C868F6235CD32800A4F077 /* Build configuration list for PBXProject "Lumpen Radio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92C868F2235CD32800A4F077;
+			productRefGroup = 92C868FC235CD32800A4F077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92C868FA235CD32800A4F077 /* Lumpen Radio */,
+				92C86910235CD32900A4F077 /* Lumpen RadioTests */,
+				92C8691B235CD32900A4F077 /* Lumpen RadioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92C868F9235CD32800A4F077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */,
+				92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */,
+				92C86905235CD32800A4F077 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C8690F235CD32900A4F077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C8691A235CD32900A4F077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92C868F7235CD32800A4F077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */,
+				92C86901235CD32800A4F077 /* SceneDelegate.swift in Sources */,
+				92C86903235CD32800A4F077 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C8690D235CD32900A4F077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C86916235CD32900A4F077 /* Lumpen_RadioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C86918235CD32900A4F077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C86921235CD32900A4F077 /* Lumpen_RadioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92C86913235CD32900A4F077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C868FA235CD32800A4F077 /* Lumpen Radio */;
+			targetProxy = 92C86912235CD32900A4F077 /* PBXContainerItemProxy */;
+		};
+		92C8691E235CD32900A4F077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C868FA235CD32800A4F077 /* Lumpen Radio */;
+			targetProxy = 92C8691D235CD32900A4F077 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92C86909235CD32800A4F077 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92C8690A235CD32800A4F077 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92C86923235CD32900A4F077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92C86924235CD32900A4F077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92C86926235CD32900A4F077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-Radio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92C86927235CD32900A4F077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-Radio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92C86929235CD32900A4F077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				INFOPLIST_FILE = "Lumpen RadioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-RadioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lumpen Radio.app/Lumpen Radio";
+			};
+			name = Debug;
+		};
+		92C8692A235CD32900A4F077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				INFOPLIST_FILE = "Lumpen RadioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-RadioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lumpen Radio.app/Lumpen Radio";
+			};
+			name = Release;
+		};
+		92C8692C235CD32900A4F077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				INFOPLIST_FILE = "Lumpen RadioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-RadioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lumpen Radio";
+			};
+			name = Debug;
+		};
+		92C8692D235CD32900A4F077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 738KLPC9RV;
+				INFOPLIST_FILE = "Lumpen RadioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-RadioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lumpen Radio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92C868F6235CD32800A4F077 /* Build configuration list for PBXProject "Lumpen Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C86923235CD32900A4F077 /* Debug */,
+				92C86924235CD32900A4F077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C86925235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C86926235CD32900A4F077 /* Debug */,
+				92C86927235CD32900A4F077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C86928235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen RadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C86929235CD32900A4F077 /* Debug */,
+				92C8692A235CD32900A4F077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C8692B235CD32900A4F077 /* Build configuration list for PBXNativeTarget "Lumpen RadioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C8692C235CD32900A4F077 /* Debug */,
+				92C8692D235CD32900A4F077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92C868F3235CD32800A4F077 /* Project object */;
+}
