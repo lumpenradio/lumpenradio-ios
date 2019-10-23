@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2z4-6t-dss">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Akkurat-Regular.otf">
+            <string>Akkurat</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Xte-6v-afH">
+            <objects>
+                <viewController id="2z4-6t-dss" customClass="MainViewController" customModule="Lumpen_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="so5-Xv-P89">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-Z5-SF1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LUMPEN RADIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-ve-NM3">
+                                <rect key="frame" x="45" y="211.5" width="324.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-IF-Aca">
+                                <rect key="frame" x="82" y="328" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Jqr-aD-dBR"/>
+                                    <constraint firstAttribute="height" constant="250" id="LM6-Zp-8xp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="RadioButton"/>
+                                <connections>
+                                    <action selector="radioButtonTapped:" destination="2z4-6t-dss" eventType="touchUpInside" id="zrC-9f-lQ8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap above to tune in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-33-Ap0">
+                                <rect key="frame" x="103" y="610" width="208.5" height="26"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLPN 105.5 FM Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PV0-O2-5ka">
+                                <rect key="frame" x="62" y="281" width="290" height="31"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PV0-O2-5ka" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="1kA-ad-mNe"/>
+                            <constraint firstItem="PV0-O2-5ka" firstAttribute="top" secondItem="dEK-ve-NM3" secondAttribute="bottom" constant="16" id="Gb8-lK-Y1X"/>
+                            <constraint firstItem="DjO-IF-Aca" firstAttribute="centerY" secondItem="Ujv-VX-Hml" secondAttribute="centerY" id="Mo4-9X-JeN"/>
+                            <constraint firstItem="mfh-Z5-SF1" firstAttribute="top" secondItem="so5-Xv-P89" secondAttribute="top" id="PJk-XR-c3s"/>
+                            <constraint firstItem="dEK-ve-NM3" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="fgt-79-VwM"/>
+                            <constraint firstItem="mfh-Z5-SF1" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" id="j1l-kP-iod"/>
+                            <constraint firstItem="DjO-IF-Aca" firstAttribute="top" secondItem="PV0-O2-5ka" secondAttribute="bottom" constant="16" id="olW-nb-YYR"/>
+                            <constraint firstItem="1Ao-33-Ap0" firstAttribute="top" secondItem="DjO-IF-Aca" secondAttribute="bottom" constant="32" id="pdY-CV-Uvc"/>
+                            <constraint firstAttribute="bottom" secondItem="mfh-Z5-SF1" secondAttribute="bottom" id="uVE-qs-GBx"/>
+                            <constraint firstItem="1Ao-33-Ap0" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="vwA-Gx-g6a"/>
+                            <constraint firstItem="DjO-IF-Aca" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="xnJ-1f-RyD"/>
+                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="mfh-Z5-SF1" secondAttribute="trailing" id="yVd-nU-oaX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ujv-VX-Hml"/>
+                    </view>
+                    <connections>
+                        <outlet property="radioSubtext" destination="1Ao-33-Ap0" id="zlm-LX-iy4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWJ-1H-0oN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46.376811594202906" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="520"/>
+        <image name="RadioButton" width="512" height="512"/>
+    </resources>
+</document>

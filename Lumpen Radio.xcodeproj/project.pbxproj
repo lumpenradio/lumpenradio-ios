@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		928472F8235D1EB100620282 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928472F7235D1EB100620282 /* Radio.swift */; };
 		92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C868FE235CD32800A4F077 /* AppDelegate.swift */; };
-		92C86901235CD32800A4F077 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86900235CD32800A4F077 /* SceneDelegate.swift */; };
-		92C86903235CD32800A4F077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C86902235CD32800A4F077 /* ContentView.swift */; };
 		92C86905235CD32800A4F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86904235CD32800A4F077 /* Assets.xcassets */; };
 		92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86907235CD32800A4F077 /* Preview Assets.xcassets */; };
 		92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C86909235CD32800A4F077 /* LaunchScreen.storyboard */; };
@@ -19,6 +16,15 @@
 		92C86930235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92C8692F235CDD5E00A4F077 /* Akkurat-Regular.otf */; };
 		92C86931235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92C8692F235CDD5E00A4F077 /* Akkurat-Regular.otf */; };
 		92C86932235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92C8692F235CDD5E00A4F077 /* Akkurat-Regular.otf */; };
+		92DEDC2A235FE6D900016AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DEDC29235FE6D900016AC8 /* Main.storyboard */; };
+		92DEDC2B235FE6D900016AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DEDC29235FE6D900016AC8 /* Main.storyboard */; };
+		92DEDC2C235FE6D900016AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DEDC29235FE6D900016AC8 /* Main.storyboard */; };
+		92DEDC33235FF4CE00016AC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEDC32235FF4CE00016AC8 /* MainViewController.swift */; };
+		92DEDC34235FF4CE00016AC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEDC32235FF4CE00016AC8 /* MainViewController.swift */; };
+		92DEDC35235FF4CE00016AC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEDC32235FF4CE00016AC8 /* MainViewController.swift */; };
+		92DEDC3A235FF88300016AC8 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928472F7235D1EB100620282 /* Radio.swift */; };
+		92DEDC3B235FF88300016AC8 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928472F7235D1EB100620282 /* Radio.swift */; };
+		92DEDC3C235FF88400016AC8 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928472F7235D1EB100620282 /* Radio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,9 @@
 		92C86920235CD32900A4F077 /* Lumpen_RadioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lumpen_RadioUITests.swift; sourceTree = "<group>"; };
 		92C86922235CD32900A4F077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8692F235CDD5E00A4F077 /* Akkurat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akkurat-Regular.otf"; sourceTree = "<group>"; };
+		92DEDC29235FE6D900016AC8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		92DEDC2E235FECF000016AC8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		92DEDC32235FF4CE00016AC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +114,17 @@
 		92C868FD235CD32800A4F077 /* Lumpen Radio */ = {
 			isa = PBXGroup;
 			children = (
+				92DEDC2E235FECF000016AC8 /* README.md */,
+				92DEDBA8235FE56A00016AC8 /* SwiftUI */,
 				92C8692E235CDD4700A4F077 /* fonts */,
 				92C868FE235CD32800A4F077 /* AppDelegate.swift */,
-				92C86900235CD32800A4F077 /* SceneDelegate.swift */,
-				92C86902235CD32800A4F077 /* ContentView.swift */,
 				92C86904235CD32800A4F077 /* Assets.xcassets */,
 				92C86909235CD32800A4F077 /* LaunchScreen.storyboard */,
 				92C8690C235CD32800A4F077 /* Info.plist */,
 				92C86906235CD32800A4F077 /* Preview Content */,
+				92DEDC29235FE6D900016AC8 /* Main.storyboard */,
 				928472F7235D1EB100620282 /* Radio.swift */,
+				92DEDC32235FF4CE00016AC8 /* MainViewController.swift */,
 			);
 			path = "Lumpen Radio";
 			sourceTree = "<group>";
@@ -150,6 +161,15 @@
 				92C8692F235CDD5E00A4F077 /* Akkurat-Regular.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		92DEDBA8235FE56A00016AC8 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				92C86900235CD32800A4F077 /* SceneDelegate.swift */,
+				92C86902235CD32800A4F077 /* ContentView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C86930235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */,
+				92DEDC2A235FE6D900016AC8 /* Main.storyboard in Resources */,
 				92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */,
 				92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */,
 				92C86905235CD32800A4F077 /* Assets.xcassets in Resources */,
@@ -268,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C86931235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */,
+				92DEDC2B235FE6D900016AC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C86932235CDD5E00A4F077 /* Akkurat-Regular.otf in Resources */,
+				92DEDC2C235FE6D900016AC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */,
-				928472F8235D1EB100620282 /* Radio.swift in Sources */,
-				92C86901235CD32800A4F077 /* SceneDelegate.swift in Sources */,
-				92C86903235CD32800A4F077 /* ContentView.swift in Sources */,
+				92DEDC33235FF4CE00016AC8 /* MainViewController.swift in Sources */,
+				92DEDC3B235FF88300016AC8 /* Radio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C86916235CD32900A4F077 /* Lumpen_RadioTests.swift in Sources */,
+				92DEDC34235FF4CE00016AC8 /* MainViewController.swift in Sources */,
+				92DEDC3A235FF88300016AC8 /* Radio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C86921235CD32900A4F077 /* Lumpen_RadioUITests.swift in Sources */,
+				92DEDC35235FF4CE00016AC8 /* MainViewController.swift in Sources */,
+				92DEDC3C235FF88400016AC8 /* Radio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +485,7 @@
 				DEVELOPMENT_TEAM = 738KLPC9RV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +506,7 @@
 				DEVELOPMENT_TEAM = 738KLPC9RV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
