@@ -14,6 +14,9 @@ import MediaPlayer
 fileprivate let BOTTOM_TEXT_RADIO_ON: String = "Tap above to tune out."
 fileprivate let BOTTOM_TEXT_RADIO_OFF: String = "Tap above to tune in."
 fileprivate let LUMPEN_AUDIO_URL: String = "http://mensajito.mx:8000/lumpen"
+fileprivate let NOW_PLAYING_TITLE = "Lumpen Radio"
+fileprivate let NOW_PLAYING_ALBUM_TITLE = "WLPN 105.5 FM Chicago"
+fileprivate let NOW_PLAYING_ARTWORK_IMG = "AppIcon"
 
 protocol RadioDelegate {
     func radioToggled(_ textContent: String)
@@ -38,7 +41,6 @@ class Radio: ObservableObject {
     
     // The audio player object
     private var player: AVPlayer?
-    private var playerItem: AVPlayerItem?
     private var radioDelegate: RadioDelegate?
     
     init(_ radioDelegate: RadioDelegate) {
@@ -70,18 +72,18 @@ class Radio: ObservableObject {
             print("Could not start radio")
             return
         }
-        self.playerItem = AVPlayerItem(url: url)
+        let playerItem = AVPlayerItem(url: url)
         let player = AVPlayer(playerItem: playerItem)
         
         player.play()
         self.isPlaying = true
         self.bottomText = BOTTOM_TEXT_RADIO_ON
-        self.player = player    }
+        self.player = player
+    }
     
     func stopRadio() {
         self.player?.pause()
         // no need to release the player, as it will cause a delay when tuning in again
-//        self.player = nil
         self.isPlaying = false
         self.bottomText = BOTTOM_TEXT_RADIO_OFF
     }
@@ -98,15 +100,17 @@ class Radio: ObservableObject {
     func setupNowPlaying() {
         // Define Now Playing Info
         var nowPlayingInfo = [String : Any]()
-        nowPlayingInfo[MPMediaItemPropertyTitle] = "Lumpen Radio - Now Playing"
+        nowPlayingInfo[MPMediaItemPropertyTitle] = NOW_PLAYING_TITLE
+        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = NOW_PLAYING_ALBUM_TITLE
 
-        if let image = UIImage(named: "AppIcon") {
+        if let image = UIImage(named: NOW_PLAYING_ARTWORK_IMG) {
             nowPlayingInfo[MPMediaItemPropertyArtwork] =
                 MPMediaItemArtwork(boundsSize: image.size) { size in
                     return image
             }
         }
         
+        let playerItem = self.player?.currentItem
         nowPlayingInfo[MPNowPlayingInfoPropertyIsLiveStream] = true
         nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem?.currentTime().seconds
         nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem?.asset.duration.seconds
