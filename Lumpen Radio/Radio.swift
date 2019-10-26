@@ -62,23 +62,19 @@ class Radio: ObservableObject {
     // Reference:
     // https://stackoverflow.com/questions/48555049/how-to-stream-audio-from-url-without-downloading-mp3-file-on-device
     func startRadio() {
-        if self.player != nil {
-            self.player?.play()
-            self.isPlaying = true
-            self.bottomText = BOTTOM_TEXT_RADIO_ON
-            return
+        // Set up player if it's nil
+        if self.player == nil {
+            guard let url = URL(string: LUMPEN_AUDIO_URL) else {
+                print("Could not start radio")
+                return
+            }
+            let playerItem = AVPlayerItem(url: url)
+            self.player = AVPlayer(playerItem: playerItem)
         }
-        guard let url = URL(string: LUMPEN_AUDIO_URL) else {
-            print("Could not start radio")
-            return
-        }
-        let playerItem = AVPlayerItem(url: url)
-        let player = AVPlayer(playerItem: playerItem)
         
-        player.play()
+        self.player?.play()
         self.isPlaying = true
         self.bottomText = BOTTOM_TEXT_RADIO_ON
-        self.player = player
     }
     
     func stopRadio() {
