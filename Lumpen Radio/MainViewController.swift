@@ -17,6 +17,7 @@ class MainViewController: UIViewController, RadioDelegate {
         super.viewDidLoad()
 
         radio = Radio(self)
+        radio?.setupAudioSession()
     }
     
     @IBAction func radioButtonTapped(_ sender: Any) {
