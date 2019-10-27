@@ -41,8 +41,6 @@
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
 		<key>Scene ConfigurationBACK</key>
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
@@ -55,6 +53,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
 	</dict>
 	<key>UIBackgroundModes</key>
 	<array>
