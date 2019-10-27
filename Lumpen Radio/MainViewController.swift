@@ -29,12 +29,6 @@ class MainViewController: UIViewController, RadioDelegate {
         registerAppLifeCycleEvents()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.player?.play()
-    }
-    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.player?.pause()
@@ -46,11 +40,12 @@ class MainViewController: UIViewController, RadioDelegate {
     
     func radioToggled(_ textContent: String) {
         radioSubtext.text = textContent
+        toggleVideo()
     }
     
     private func registerAppLifeCycleEvents() {
         NotificationCenter.default.addObserver(self, selector: #selector(pauseVideo), name: UIApplication.willResignActiveNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(playVideo), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(toggleVideo), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     private func unregisterAppLifeCycleEvents() {
@@ -62,8 +57,12 @@ class MainViewController: UIViewController, RadioDelegate {
         self.player?.pause()
     }
     
-    @objc private func playVideo() {
-        self.player?.play()
+    @objc private func toggleVideo() {
+        if self.radio?.isPlaying == true {
+            self.player?.play()
+        } else {
+            pauseVideo()
+        }
     }
     
     private func initializeVideoPlayerWithVideo() {
