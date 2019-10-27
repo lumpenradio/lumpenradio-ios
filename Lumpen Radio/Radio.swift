@@ -37,7 +37,7 @@ class Radio: ObservableObject {
 // END SwiftUI Version
     
     // Tells whether the radio is currently playing
-    private var isPlaying = false
+    var isPlaying = false
     
     // The audio player object
     private var player: AVPlayer?
