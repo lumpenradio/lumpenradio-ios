@@ -14,3 +14,11 @@ In order to bring back the SwiftUI base files, do the following:
 6. Optional: In Lumpen Radio project settings, change Main Interface to blank entry
 
 The app should now be SwiftUI driven from start up.
+
+## Asset Credits
+
+### Radio off button
+<div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+### Radio on button
+<div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
