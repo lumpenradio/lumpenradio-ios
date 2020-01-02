@@ -15,6 +15,18 @@ In order to bring back the SwiftUI base files, do the following:
 
 The app should now be SwiftUI driven from start up.
 
+## App Icon Info
+
+### Creation
+Created in Inkscape https://inkscape.org/
+
+Inkscape template used from https://github.com/theherk/App-Icon-Template
+
+Used modified script from https://github.com/theherk/App-Icon-Template to output a PNG that's 1536x1536 resolution
+
+PNG is fed to https://makeappicon.com service and received iOS App Icons to place into project
+
+
 ## Asset Credits
 
 ### Radio off button
