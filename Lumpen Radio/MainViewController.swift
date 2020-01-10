@@ -61,7 +61,7 @@ class MainViewController: UIViewController, RadioDelegate {
     // Create the transition animation
     private func createTransitionAnimation() -> CATransition {
         let transition = CATransition()
-        transition.duration = 1
+        transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: .easeIn)
         transition.type = .fade
         return transition
