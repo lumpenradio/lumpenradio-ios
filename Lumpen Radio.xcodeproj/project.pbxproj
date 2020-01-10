@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5053195A236487ED004DFE78 /* turntable-loop-1920x500-h264-512kbps-h264.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5053195923648679004DFE78 /* turntable-loop-1920x500-h264-512kbps-h264.mp4 */; };
 		92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C868FE235CD32800A4F077 /* AppDelegate.swift */; };
 		92C86905235CD32800A4F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86904235CD32800A4F077 /* Assets.xcassets */; };
 		92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86907235CD32800A4F077 /* Preview Assets.xcassets */; };
@@ -46,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5053195923648679004DFE78 /* turntable-loop-1920x500-h264-512kbps-h264.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "turntable-loop-1920x500-h264-512kbps-h264.mp4"; sourceTree = "<group>"; };
 		928472F7235D1EB100620282 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		92C868FB235CD32800A4F077 /* Lumpen Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumpen Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C868FE235CD32800A4F077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		92C868FD235CD32800A4F077 /* Lumpen Radio */ = {
 			isa = PBXGroup;
 			children = (
-				5053195923648679004DFE78 /* turntable-loop-1920x500-h264-512kbps-h264.mp4 */,
 				92DEDC2E235FECF000016AC8 /* README.md */,
 				92DEDBA8235FE56A00016AC8 /* SwiftUI */,
 				92C8692E235CDD4700A4F077 /* fonts */,
@@ -284,7 +281,6 @@
 				92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */,
 				92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */,
 				92C86905235CD32800A4F077 /* Assets.xcassets in Resources */,
-				5053195A236487ED004DFE78 /* turntable-loop-1920x500-h264-512kbps-h264.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,9 +480,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
-				DEVELOPMENT_TEAM = 738KLPC9RV;
+				DEVELOPMENT_TEAM = 3FGY239S7X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -494,8 +491,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-Radio";
+				PRODUCT_BUNDLE_IDENTIFIER = com.publicmediainstitute.lumpenradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Lumpen Radio iOS Dist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,9 +503,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
-				DEVELOPMENT_TEAM = 738KLPC9RV;
+				DEVELOPMENT_TEAM = 3FGY239S7X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -515,8 +514,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lumpenradio.Lumpen-Radio";
+				PRODUCT_BUNDLE_IDENTIFIER = com.publicmediainstitute.lumpenradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Lumpen Radio iOS Dist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
