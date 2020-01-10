@@ -67,15 +67,6 @@ class MainViewController: UIViewController, RadioDelegate {
     
     private func initializeVideoPlayerWithVideo() {
 
-        // get the path string for the video from assets
-        let videoString:String? = Bundle.main.path(forResource: "turntable-loop-1920x500-h264-512kbps-h264", ofType: "mp4")
-        guard let unwrappedVideoPath = videoString else {return}
-
-        // convert the path string to a url
-        let videoUrl = URL(fileURLWithPath: unwrappedVideoPath)
-
-        // initialize the video player with the url
-        self.player = AVPlayer(url: videoUrl)
 
         // create a video layer for the player
         let layer: AVPlayerLayer = AVPlayerLayer(player: player)
@@ -89,11 +80,5 @@ class MainViewController: UIViewController, RadioDelegate {
         // add the layer to the container
         self.view.layer.insertSublayer(layer, at: 0)
         
-        // play video
-        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem, queue: .main) { [weak self] _ in
-            guard let `self` = self else {return}
-            self.player?.seek(to: CMTime.zero)
-            self.player?.play()
-        }
     }
 }

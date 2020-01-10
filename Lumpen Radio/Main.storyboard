@@ -20,9 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-Z5-SF1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-IF-Aca">
                                 <rect key="frame" x="83" y="329" width="248" height="248"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,26 +51,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.83379793908849309" green="0.036858037750588081" blue="0.93133328045685282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PV0-O2-5ka" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="1kA-ad-mNe"/>
                             <constraint firstItem="dEK-ve-NM3" firstAttribute="top" secondItem="1Ao-33-Ap0" secondAttribute="bottom" constant="32" id="G53-Wn-pe6"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerY" secondItem="Ujv-VX-Hml" secondAttribute="centerY" id="Mo4-9X-JeN"/>
-                            <constraint firstItem="mfh-Z5-SF1" firstAttribute="top" secondItem="so5-Xv-P89" secondAttribute="top" id="PJk-XR-c3s"/>
                             <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="PV0-O2-5ka" secondAttribute="trailing" constant="16" id="Qau-eH-0jj"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="width" secondItem="Ujv-VX-Hml" secondAttribute="width" multiplier="0.6" id="SIB-eq-BGK"/>
                             <constraint firstItem="PV0-O2-5ka" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="Wbu-lN-Lys"/>
                             <constraint firstItem="1Ao-33-Ap0" firstAttribute="width" secondItem="PV0-O2-5ka" secondAttribute="width" id="bjm-t0-y0g"/>
                             <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="dEK-ve-NM3" secondAttribute="trailing" constant="16" id="c8u-nZ-wcJ"/>
                             <constraint firstItem="dEK-ve-NM3" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="fgt-79-VwM"/>
-                            <constraint firstItem="mfh-Z5-SF1" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" id="j1l-kP-iod"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="top" secondItem="PV0-O2-5ka" secondAttribute="bottom" constant="16" id="olW-nb-YYR"/>
                             <constraint firstItem="dEK-ve-NM3" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="pI8-WK-qyM"/>
                             <constraint firstItem="1Ao-33-Ap0" firstAttribute="top" secondItem="DjO-IF-Aca" secondAttribute="bottom" constant="32" id="pdY-CV-Uvc"/>
-                            <constraint firstAttribute="bottom" secondItem="mfh-Z5-SF1" secondAttribute="bottom" id="uVE-qs-GBx"/>
                             <constraint firstItem="1Ao-33-Ap0" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="vwA-Gx-g6a"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="xnJ-1f-RyD"/>
-                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="mfh-Z5-SF1" secondAttribute="trailing" id="yVd-nU-oaX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ujv-VX-Hml"/>
                     </view>
@@ -87,7 +80,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="1920" height="520"/>
         <image name="RadioButton" width="512" height="512"/>
     </resources>
 </document>
