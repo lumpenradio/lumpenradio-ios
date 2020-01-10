@@ -58,12 +58,25 @@ class MainViewController: UIViewController, RadioDelegate {
         self.player?.pause()
     }
     
+    // Create the transition animation
+    private func createTransitionAnimation() -> CATransition {
+        let transition = CATransition()
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: .easeIn)
+        transition.type = .fade
+        return transition
+    }
+    
     @objc private func toggleVideo() {
         if self.radio?.isPlaying == true {
             self.player?.play()
+            
+            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
             radioButton.setImage(UIImage(named: "lumpen_hand_on"), for: .normal)
         } else {
             pauseVideo()
+            
+            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
             radioButton.setImage(UIImage(named: "lumpen_hand_off"), for: .normal)
         }
     }
