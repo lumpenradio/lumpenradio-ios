@@ -482,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
-				DEVELOPMENT_TEAM = 738KLPC9RV;
+				DEVELOPMENT_TEAM = 3FGY239S7X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -490,7 +490,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.publicmediainstitute.lumpen-radio";
+				PRODUCT_BUNDLE_IDENTIFIER = com.publicmediainstitute.lumpenradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,7 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lumpen Radio/Preview Content\"";
-				DEVELOPMENT_TEAM = 738KLPC9RV;
+				DEVELOPMENT_TEAM = 3FGY239S7X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Lumpen Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -511,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.publicmediainstitute.lumpen-radio";
+				PRODUCT_BUNDLE_IDENTIFIER = com.publicmediainstitute.lumpenradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
