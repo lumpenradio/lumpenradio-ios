@@ -13,6 +13,7 @@ class MainViewController: UIViewController, RadioDelegate {
 
     private var radio: Radio?
     private var player: AVPlayer?
+    @IBOutlet weak var radioButton: UIButton!
     
     @IBOutlet weak var radioSubtext: UILabel!
     
@@ -60,8 +61,10 @@ class MainViewController: UIViewController, RadioDelegate {
     @objc private func toggleVideo() {
         if self.radio?.isPlaying == true {
             self.player?.play()
+            radioButton.setImage(UIImage(named: "lumpen_hand_on"), for: .normal)
         } else {
             pauseVideo()
+            radioButton.setImage(UIImage(named: "lumpen_hand_off"), for: .normal)
         }
     }
     

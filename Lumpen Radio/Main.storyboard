@@ -20,13 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-IF-Aca">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-IF-Aca" userLabel="RadioButton">
                                 <rect key="frame" x="83" y="329" width="248" height="248"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DjO-IF-Aca" secondAttribute="height" multiplier="1:1" id="Tfm-Gc-tTP"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="RadioButton"/>
+                                <state key="normal" title="Button" image="lumpen_hand_off"/>
                                 <connections>
                                     <action selector="radioButtonTapped:" destination="2z4-6t-dss" eventType="touchUpInside" id="zrC-9f-lQ8"/>
                                 </connections>
@@ -71,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="Ujv-VX-Hml"/>
                     </view>
                     <connections>
+                        <outlet property="radioButton" destination="DjO-IF-Aca" id="eZ7-CX-XoZ"/>
                         <outlet property="radioSubtext" destination="1Ao-33-Ap0" id="zlm-LX-iy4"/>
                     </connections>
                 </viewController>
@@ -80,6 +81,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RadioButton" width="512" height="512"/>
+        <image name="lumpen_hand_off" width="1004" height="1022"/>
     </resources>
 </document>
