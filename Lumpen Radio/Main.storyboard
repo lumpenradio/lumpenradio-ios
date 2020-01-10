@@ -31,13 +31,6 @@
                                     <action selector="radioButtonTapped:" destination="2z4-6t-dss" eventType="touchUpInside" id="zrC-9f-lQ8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap above to tune in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-33-Ap0">
-                                <rect key="frame" x="16" y="609" width="382" height="37"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLPN 105.5 FM Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PV0-O2-5ka">
                                 <rect key="frame" x="16" y="254" width="382" height="59"/>
                                 <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="50"/>
@@ -45,8 +38,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LUMPEN RADIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-ve-NM3">
-                                <rect key="frame" x="16" y="678" width="382" height="100.5"/>
+                                <rect key="frame" x="16" y="593" width="382" height="100.5"/>
                                 <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="85"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap above to tune in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-33-Ap0">
+                                <rect key="frame" x="16" y="809" width="382" height="37"/>
+                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,17 +53,17 @@
                         <color key="backgroundColor" red="0.83379793908849309" green="0.036858037750588081" blue="0.93133328045685282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PV0-O2-5ka" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="1kA-ad-mNe"/>
-                            <constraint firstItem="dEK-ve-NM3" firstAttribute="top" secondItem="1Ao-33-Ap0" secondAttribute="bottom" constant="32" id="G53-Wn-pe6"/>
+                            <constraint firstItem="dEK-ve-NM3" firstAttribute="top" secondItem="DjO-IF-Aca" secondAttribute="bottom" constant="16" id="EhP-1W-rSK"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerY" secondItem="Ujv-VX-Hml" secondAttribute="centerY" id="Mo4-9X-JeN"/>
                             <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="PV0-O2-5ka" secondAttribute="trailing" constant="16" id="Qau-eH-0jj"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="width" secondItem="Ujv-VX-Hml" secondAttribute="width" multiplier="0.6" id="SIB-eq-BGK"/>
                             <constraint firstItem="PV0-O2-5ka" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="Wbu-lN-Lys"/>
                             <constraint firstItem="1Ao-33-Ap0" firstAttribute="width" secondItem="PV0-O2-5ka" secondAttribute="width" id="bjm-t0-y0g"/>
                             <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="dEK-ve-NM3" secondAttribute="trailing" constant="16" id="c8u-nZ-wcJ"/>
+                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="bottom" secondItem="1Ao-33-Ap0" secondAttribute="bottom" constant="16" id="d52-Tu-66S"/>
                             <constraint firstItem="dEK-ve-NM3" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="fgt-79-VwM"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="top" secondItem="PV0-O2-5ka" secondAttribute="bottom" constant="16" id="olW-nb-YYR"/>
                             <constraint firstItem="dEK-ve-NM3" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="pI8-WK-qyM"/>
-                            <constraint firstItem="1Ao-33-Ap0" firstAttribute="top" secondItem="DjO-IF-Aca" secondAttribute="bottom" constant="32" id="pdY-CV-Uvc"/>
                             <constraint firstItem="1Ao-33-Ap0" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="vwA-Gx-g6a"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="xnJ-1f-RyD"/>
                         </constraints>
