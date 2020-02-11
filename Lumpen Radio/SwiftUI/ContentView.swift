@@ -9,7 +9,7 @@
 import SwiftUI
 
 // Constants
-fileprivate let CUSTOM_FONT = "Akkurate-Regular"
+fileprivate let CUSTOM_FONT = "MinionPro-Regular"
 fileprivate let RADIO_IMAGE_NAME = "RadioButton"
 fileprivate let RADIO_BUTTON_MIN: CGFloat = 100
 fileprivate let RADIO_BUTTON_MAX_IDEAL: CGFloat = 250

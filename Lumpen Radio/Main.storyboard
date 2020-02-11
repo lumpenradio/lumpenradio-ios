@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2z4-6t-dss">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2z4-6t-dss">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Akkurat-Regular.otf">
-            <string>Akkurat</string>
+        <array key="MinionPro-Regular.otf">
+            <string>MinionPro-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,20 +32,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLPN 105.5 FM Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PV0-O2-5ka">
-                                <rect key="frame" x="16" y="253.66666666666663" width="382" height="59"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="50"/>
+                                <rect key="frame" x="16" y="262.66666666666669" width="382" height="50"/>
+                                <fontDescription key="fontDescription" name="MinionPro-Regular" family="Minion Pro" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LUMPEN RADIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-ve-NM3">
-                                <rect key="frame" x="16" y="593.33333333333337" width="382" height="100.33333333333337"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="85"/>
+                                <rect key="frame" x="16" y="593.33333333333337" width="382" height="85"/>
+                                <fontDescription key="fontDescription" name="MinionPro-Regular" family="Minion Pro" pointSize="85"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap above to tune in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-33-Ap0">
-                                <rect key="frame" x="16" y="809" width="382" height="37"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="31"/>
+                                <rect key="frame" x="16" y="815" width="382" height="31"/>
+                                <fontDescription key="fontDescription" name="MinionPro-Regular" family="Minion Pro" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
