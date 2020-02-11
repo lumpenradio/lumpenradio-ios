@@ -27,6 +27,10 @@ class MainViewController: UIViewController, RadioDelegate {
         registerAppLifeCycleEvents()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.player?.pause()
