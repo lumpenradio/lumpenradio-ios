@@ -13,9 +13,6 @@ class MainViewController: UIViewController, RadioDelegate {
 
     private var radio: Radio?
     private var player: AVPlayer?
-    @IBOutlet weak var radioButton: UIButton!
-    
-    @IBOutlet weak var radioSubtext: UILabel!
     
     deinit {
         unregisterAppLifeCycleEvents()
@@ -40,7 +37,6 @@ class MainViewController: UIViewController, RadioDelegate {
     }
     
     func radioToggled(_ textContent: String) {
-        radioSubtext.text = textContent
         toggleVideo()
     }
     
@@ -70,14 +66,8 @@ class MainViewController: UIViewController, RadioDelegate {
     @objc private func toggleVideo() {
         if self.radio?.isPlaying == true {
             self.player?.play()
-            
-            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
-            radioButton.setImage(UIImage(named: "lumpen_hand_on"), for: .normal)
         } else {
             pauseVideo()
-            
-            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
-            radioButton.setImage(UIImage(named: "lumpen_hand_off"), for: .normal)
         }
     }
     
