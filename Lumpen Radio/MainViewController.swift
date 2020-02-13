@@ -13,6 +13,10 @@ class MainViewController: UIViewController, RadioDelegate {
 
     private var radio: Radio?
     private var player: AVPlayer?
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
+    private let IMAGE_BACKGROUND_ON = "background_on.jpg"
+    private let IMAGE_BACKGROUND_NORMAL = "background.jpg"
     
     deinit {
         unregisterAppLifeCycleEvents()
@@ -70,8 +74,10 @@ class MainViewController: UIViewController, RadioDelegate {
     @objc private func toggleVideo() {
         if self.radio?.isPlaying == true {
             self.player?.play()
+            backgroundImageView.image = UIImage.init(named: IMAGE_BACKGROUND_ON)
         } else {
             pauseVideo()
+            backgroundImageView.image = UIImage.init(named: IMAGE_BACKGROUND_NORMAL)
         }
     }
     
