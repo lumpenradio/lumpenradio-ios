@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2z4-6t-dss">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2z4-6t-dss">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Akkurat-Regular.otf">
-            <string>Akkurat</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="Xte-6v-afH">
@@ -20,58 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pKv-bq-tWC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="856"/>
+                                <color key="backgroundColor" red="0.02676123939" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-IF-Aca" userLabel="RadioButton">
-                                <rect key="frame" x="82.666666666666671" y="328.66666666666669" width="248.66666666666663" height="248.66666666666669"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="83" y="329" width="248" height="248"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DjO-IF-Aca" secondAttribute="height" multiplier="1:1" id="Tfm-Gc-tTP"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="lumpen_hand_off"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="radioButtonTapped:" destination="2z4-6t-dss" eventType="touchUpInside" id="zrC-9f-lQ8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLPN 105.5 FM Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PV0-O2-5ka">
-                                <rect key="frame" x="16" y="253.66666666666663" width="382" height="59"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LUMPEN RADIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-ve-NM3">
-                                <rect key="frame" x="16" y="593.33333333333337" width="382" height="100.33333333333337"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="85"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap above to tune in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-33-Ap0">
-                                <rect key="frame" x="16" y="809" width="382" height="37"/>
-                                <fontDescription key="fontDescription" name="Akkurat" family="Akkurat" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83379793908849309" green="0.036858037750588081" blue="0.93133328045685282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.02676123939" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PV0-O2-5ka" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="1kA-ad-mNe"/>
-                            <constraint firstItem="dEK-ve-NM3" firstAttribute="top" secondItem="DjO-IF-Aca" secondAttribute="bottom" constant="16" id="EhP-1W-rSK"/>
+                            <constraint firstAttribute="bottom" secondItem="pKv-bq-tWC" secondAttribute="bottom" constant="20" symbolic="YES" id="DmO-wy-uli"/>
+                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="pKv-bq-tWC" secondAttribute="trailing" id="MkO-fm-HdO"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerY" secondItem="Ujv-VX-Hml" secondAttribute="centerY" id="Mo4-9X-JeN"/>
-                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="PV0-O2-5ka" secondAttribute="trailing" constant="16" id="Qau-eH-0jj"/>
+                            <constraint firstItem="pKv-bq-tWC" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" id="PxL-zc-qSE"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="width" secondItem="Ujv-VX-Hml" secondAttribute="width" multiplier="0.6" id="SIB-eq-BGK"/>
-                            <constraint firstItem="PV0-O2-5ka" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="Wbu-lN-Lys"/>
-                            <constraint firstItem="1Ao-33-Ap0" firstAttribute="width" secondItem="PV0-O2-5ka" secondAttribute="width" id="bjm-t0-y0g"/>
-                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="trailing" secondItem="dEK-ve-NM3" secondAttribute="trailing" constant="16" id="c8u-nZ-wcJ"/>
-                            <constraint firstItem="Ujv-VX-Hml" firstAttribute="bottom" secondItem="1Ao-33-Ap0" secondAttribute="bottom" constant="16" id="d52-Tu-66S"/>
-                            <constraint firstItem="dEK-ve-NM3" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="fgt-79-VwM"/>
-                            <constraint firstItem="DjO-IF-Aca" firstAttribute="top" secondItem="PV0-O2-5ka" secondAttribute="bottom" constant="16" id="olW-nb-YYR"/>
-                            <constraint firstItem="dEK-ve-NM3" firstAttribute="leading" secondItem="Ujv-VX-Hml" secondAttribute="leading" constant="16" id="pI8-WK-qyM"/>
-                            <constraint firstItem="1Ao-33-Ap0" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="vwA-Gx-g6a"/>
+                            <constraint firstItem="pKv-bq-tWC" firstAttribute="top" secondItem="so5-Xv-P89" secondAttribute="top" constant="20" symbolic="YES" id="mR1-uu-7gu"/>
                             <constraint firstItem="DjO-IF-Aca" firstAttribute="centerX" secondItem="Ujv-VX-Hml" secondAttribute="centerX" id="xnJ-1f-RyD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ujv-VX-Hml"/>
                     </view>
                     <connections>
-                        <outlet property="radioButton" destination="DjO-IF-Aca" id="eZ7-CX-XoZ"/>
-                        <outlet property="radioSubtext" destination="1Ao-33-Ap0" id="zlm-LX-iy4"/>
+                        <outlet property="backgroundImageView" destination="pKv-bq-tWC" id="Hzj-KF-fA6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWJ-1H-0oN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,6 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lumpen_hand_off" width="1004" height="1022"/>
+        <image name="background" width="1242" height="2688"/>
     </resources>
 </document>

@@ -13,9 +13,10 @@ class MainViewController: UIViewController, RadioDelegate {
 
     private var radio: Radio?
     private var player: AVPlayer?
-    @IBOutlet weak var radioButton: UIButton!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
-    @IBOutlet weak var radioSubtext: UILabel!
+    private let IMAGE_BACKGROUND_ON = "background_on.jpg"
+    private let IMAGE_BACKGROUND_NORMAL = "background.jpg"
     
     deinit {
         unregisterAppLifeCycleEvents()
@@ -30,6 +31,10 @@ class MainViewController: UIViewController, RadioDelegate {
         registerAppLifeCycleEvents()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.player?.pause()
@@ -40,7 +45,6 @@ class MainViewController: UIViewController, RadioDelegate {
     }
     
     func radioToggled(_ textContent: String) {
-        radioSubtext.text = textContent
         toggleVideo()
     }
     
@@ -70,14 +74,10 @@ class MainViewController: UIViewController, RadioDelegate {
     @objc private func toggleVideo() {
         if self.radio?.isPlaying == true {
             self.player?.play()
-            
-            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
-            radioButton.setImage(UIImage(named: "lumpen_hand_on"), for: .normal)
+            backgroundImageView.image = UIImage.init(named: IMAGE_BACKGROUND_ON)
         } else {
             pauseVideo()
-            
-            radioButton.layer.add(createTransitionAnimation(), forKey: nil)
-            radioButton.setImage(UIImage(named: "lumpen_hand_off"), for: .normal)
+            backgroundImageView.image = UIImage.init(named: IMAGE_BACKGROUND_NORMAL)
         }
     }
     
