@@ -1,5 +1,19 @@
 # Lumpen Radio
 
+## Tag Schema
+Follows [Semantic Versioning](https://semver.org/)
+
+Tags will be applied as follows:
+
+`[x].[y]b[num]` or `[x].[y].[z]b[num]`
+
+where:
+
+- x: First (major) number in semver
+- y: Second (minor) number in semver
+- z: third (patch) number in semver
+- num: Build number, as noted in XCode
+
 ## Switching to SwiftUI
 This project originally started as a SwiftUI but then shifted to UIKit to support iOS <13, since SwiftUI is only available to iOS 13+
 
