@@ -10,6 +10,7 @@
 		92711EE223F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */; };
 		92711EE323F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */; };
 		92711EE423F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */; };
+		927FAEE32447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 927FAEE22447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 */; };
 		92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C868FE235CD32800A4F077 /* AppDelegate.swift */; };
 		92C86905235CD32800A4F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86904235CD32800A4F077 /* Assets.xcassets */; };
 		92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86907235CD32800A4F077 /* Preview Assets.xcassets */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Regular.otf"; sourceTree = "<group>"; };
+		927FAEE22447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lumpen_radio_audio_logo_nor.mp3; sourceTree = "<group>"; };
 		928472F7235D1EB100620282 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		92C868FB235CD32800A4F077 /* Lumpen Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumpen Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C868FE235CD32800A4F077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		927FAEE12447CBA80059D9A8 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				927FAEE22447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		92C868F2235CD32800A4F077 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		92C868FD235CD32800A4F077 /* Lumpen Radio */ = {
 			isa = PBXGroup;
 			children = (
+				927FAEE12447CBA80059D9A8 /* sounds */,
 				92DEDC2E235FECF000016AC8 /* README.md */,
 				92DEDBA8235FE56A00016AC8 /* SwiftUI */,
 				92C8692E235CDD4700A4F077 /* fonts */,
@@ -279,6 +290,7 @@
 				92711EE223F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */,
 				92DEDC2A235FE6D900016AC8 /* Main.storyboard in Resources */,
 				92C8690B235CD32800A4F077 /* LaunchScreen.storyboard in Resources */,
+				927FAEE32447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 in Resources */,
 				92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */,
 				92C86905235CD32800A4F077 /* Assets.xcassets in Resources */,
 			);
