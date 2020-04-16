@@ -14,6 +14,7 @@ class MainViewController: UIViewController, RadioDelegate {
     private var radio: Radio?
     private var player: AVPlayer?
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var radioButton: UIButton!
     
     private let IMAGE_BACKGROUND_ON = "background_on.jpg"
     private let IMAGE_BACKGROUND_NORMAL = "background.jpg"
@@ -25,6 +26,9 @@ class MainViewController: UIViewController, RadioDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Reset the user default for playing intro to radio
+        UserDefaults.standard.set(true, forKey: USERDEFAULTS_KEY_RADIO_INTRO)
+        
         radio = Radio(self)
         radio?.setupAudioSession()
         initializeVideoPlayerWithVideo()
@@ -44,8 +48,14 @@ class MainViewController: UIViewController, RadioDelegate {
         radio?.toggleRadio()
     }
     
-    func radioToggled(_ textContent: String) {
+    func radioToggled() {
         toggleVideo()
+    }
+    
+    // Disables or enables the radio button from user interaction
+    // Useful for when intro audio plays
+    func shouldEnableButton(_ enableButton: Bool) {
+        radioButton.isEnabled = enableButton
     }
     
     private func registerAppLifeCycleEvents() {

@@ -11,28 +11,24 @@ import AVFoundation
 import MediaPlayer
 
 // Constants
-fileprivate let BOTTOM_TEXT_RADIO_ON: String = "Tap above to tune out."
-fileprivate let BOTTOM_TEXT_RADIO_OFF: String = "Tap above to tune in."
 fileprivate let LUMPEN_AUDIO_URL: String = "http://mensajito.mx:8000/lumpen"
 fileprivate let NOW_PLAYING_TITLE = "Lumpen Radio"
 fileprivate let NOW_PLAYING_ALBUM_TITLE = "WLPN 105.5 FM Chicago"
 fileprivate let NOW_PLAYING_ARTWORK_IMG = "AppIcon"
 
 protocol RadioDelegate {
-    func radioToggled(_ textContent: String)
+    func radioToggled()
+    func shouldEnableButton(_ enableButton: Bool)
 }
 
 // UIKit Version
 class Radio {
-    var bottomText = BOTTOM_TEXT_RADIO_OFF
     
 // END UIKit Version
     
 // SwiftUI Version
 /*
 class Radio: ObservableObject {
-    
-    @Published var bottomText = BOTTOM_TEXT_RADIO_OFF
  */
 // END SwiftUI Version
     
@@ -47,41 +43,86 @@ class Radio: ObservableObject {
         self.radioDelegate = radioDelegate
     }
     
+    // Callback via observer for when intro audio is done playing
+    // Sets the UserDefault which indicates that said audio has played
+    @objc func introHasPlayed() {
+        self.radioDelegate?.shouldEnableButton(true)
+        // Set that the intro has been played already for this session
+        UserDefaults.standard.set(false, forKey: USERDEFAULTS_KEY_RADIO_INTRO)
+        
+        // Remove observer just in case this is called from NotificationCenter
+        NotificationCenter.default.removeObserver(self)
+        stopRadio()
+        toggleRadio()
+    }
+    
     func toggleRadio() {
         if self.isPlaying {
             stopRadio()
-        } else {
+        } else if !UserDefaults.standard.bool(forKey: USERDEFAULTS_KEY_RADIO_INTRO) {
             startRadio()
             setupNowPlaying()
             setupRemoteCommandCenter()
+        } else {
+            // Play intro
+            guard let url = Bundle.main.url(forResource: RADIO_INTRO_FILENAME,
+                                            withExtension: RADIO_INTRO_FILETYPE) else {
+                UserDefaults.standard.set(false,
+                                          forKey: USERDEFAULTS_KEY_RADIO_INTRO)
+                toggleRadio()
+                return
+            }
+            let playerItem = AVPlayerItem(url: url)
+            self.player = AVPlayer(playerItem: playerItem)
+            
+            // Set observer
+            NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(introHasPlayed),
+                                                   name: .AVPlayerItemDidPlayToEndTime,
+                                                   object: self.player?.currentItem)
+            
+            self.player?.play()
+            self.radioDelegate?.shouldEnableButton(false)
         }
         
-        self.radioDelegate?.radioToggled(bottomText)
+        self.radioDelegate?.radioToggled()
+    }
+    
+    // Helper function to extract out the give player's URLAsset as absolute string
+    static func getItemAssetURLAsString(_ player: AVPlayer?) -> String {
+        return ((player?.currentItem?.asset) as? AVURLAsset)?.url.absoluteString ?? ""
     }
     
     // Reference:
     // https://stackoverflow.com/questions/48555049/how-to-stream-audio-from-url-without-downloading-mp3-file-on-device
     func startRadio() {
+        
+        guard let url = URL(string: LUMPEN_AUDIO_URL) else {
+            print("Could not start radio")
+            return
+        }
+        let playerItem = AVPlayerItem(url: url)
+        
         // Set up player if it's nil
-        if self.player == nil {
-            guard let url = URL(string: LUMPEN_AUDIO_URL) else {
-                print("Could not start radio")
-                return
-            }
-            let playerItem = AVPlayerItem(url: url)
+        if (self.player == nil || Radio.getItemAssetURLAsString(self.player) != url.absoluteString) {
             self.player = AVPlayer(playerItem: playerItem)
         }
         
         self.player?.play()
         self.isPlaying = true
-        self.bottomText = BOTTOM_TEXT_RADIO_ON
     }
     
     func stopRadio() {
         self.player?.pause()
-        // no need to release the player, as it will cause a delay when tuning in again
         self.isPlaying = false
-        self.bottomText = BOTTOM_TEXT_RADIO_OFF
+        
+        // Add a fresh PlayerItem so when feed starts again it plays the latest off the feed
+        guard let url = URL(string: LUMPEN_AUDIO_URL) else {
+            print("Could not start radio")
+            return
+        }
+        let playerItem = AVPlayerItem(url: url)
+        self.player?.replaceCurrentItem(with: playerItem)
     }
     
     func setupAudioSession() {
@@ -124,22 +165,22 @@ class Radio: ObservableObject {
     
     func setupRemoteCommandCenter() {
         let commandCenter = MPRemoteCommandCenter.shared();
-                commandCenter.playCommand.isEnabled = true
+        commandCenter.playCommand.isEnabled = true
         commandCenter.playCommand.addTarget {[weak self] event in
             guard let `self` = self else {
                 return .commandFailed
             }
             self.startRadio()
-            self.radioDelegate?.radioToggled(self.bottomText)
+            self.radioDelegate?.radioToggled()
             return .success
         }
-        commandCenter.pauseCommand.isEnabled = true
-        commandCenter.pauseCommand.addTarget {[weak self] event in
+        commandCenter.stopCommand.isEnabled = true
+        commandCenter.stopCommand.addTarget {[weak self] event in
             guard let `self` = self else {
                 return .commandFailed
             }
             self.stopRadio()
-            self.radioDelegate?.radioToggled(self.bottomText)
+            self.radioDelegate?.radioToggled()
             return .success
         }
     }
