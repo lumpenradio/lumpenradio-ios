@@ -25,6 +25,9 @@ class MainViewController: UIViewController, RadioDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Reset the user default for playing intro to radio
+        UserDefaults.standard.set(true, forKey: USERDEFAULTS_KEY_RADIO_INTRO)
+        
         radio = Radio(self)
         radio?.setupAudioSession()
         initializeVideoPlayerWithVideo()
@@ -44,7 +47,7 @@ class MainViewController: UIViewController, RadioDelegate {
         radio?.toggleRadio()
     }
     
-    func radioToggled(_ textContent: String) {
+    func radioToggled() {
         toggleVideo()
     }
     

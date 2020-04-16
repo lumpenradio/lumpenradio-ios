@@ -11,6 +11,9 @@
 		92711EE323F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */; };
 		92711EE423F2702E00F0DFDF /* MinionPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */; };
 		927FAEE32447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 927FAEE22447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 */; };
+		92A7D1AB2447F14700419014 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7D1AA2447F14700419014 /* Constants.swift */; };
+		92A7D1AC2447F14700419014 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7D1AA2447F14700419014 /* Constants.swift */; };
+		92A7D1AD2447F14700419014 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7D1AA2447F14700419014 /* Constants.swift */; };
 		92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C868FE235CD32800A4F077 /* AppDelegate.swift */; };
 		92C86905235CD32800A4F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86904235CD32800A4F077 /* Assets.xcassets */; };
 		92C86908235CD32800A4F077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C86907235CD32800A4F077 /* Preview Assets.xcassets */; };
@@ -49,6 +52,7 @@
 		92711EE123F2702E00F0DFDF /* MinionPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MinionPro-Regular.otf"; sourceTree = "<group>"; };
 		927FAEE22447CBC70059D9A8 /* lumpen_radio_audio_logo_nor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lumpen_radio_audio_logo_nor.mp3; sourceTree = "<group>"; };
 		928472F7235D1EB100620282 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		92A7D1AA2447F14700419014 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		92C868FB235CD32800A4F077 /* Lumpen Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumpen Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C868FE235CD32800A4F077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C86900235CD32800A4F077 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				92DEDC29235FE6D900016AC8 /* Main.storyboard */,
 				928472F7235D1EB100620282 /* Radio.swift */,
 				92DEDC32235FF4CE00016AC8 /* MainViewController.swift */,
+				92A7D1AA2447F14700419014 /* Constants.swift */,
 			);
 			path = "Lumpen Radio";
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				92C868FF235CD32800A4F077 /* AppDelegate.swift in Sources */,
 				92DEDC33235FF4CE00016AC8 /* MainViewController.swift in Sources */,
 				92DEDC3B235FF88300016AC8 /* Radio.swift in Sources */,
+				92A7D1AB2447F14700419014 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +340,7 @@
 				92C86916235CD32900A4F077 /* Lumpen_RadioTests.swift in Sources */,
 				92DEDC34235FF4CE00016AC8 /* MainViewController.swift in Sources */,
 				92DEDC3A235FF88300016AC8 /* Radio.swift in Sources */,
+				92A7D1AC2447F14700419014 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +351,7 @@
 				92C86921235CD32900A4F077 /* Lumpen_RadioUITests.swift in Sources */,
 				92DEDC35235FF4CE00016AC8 /* MainViewController.swift in Sources */,
 				92DEDC3C235FF88400016AC8 /* Radio.swift in Sources */,
+				92A7D1AD2447F14700419014 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
