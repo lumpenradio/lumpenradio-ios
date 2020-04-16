@@ -165,7 +165,7 @@ class Radio: ObservableObject {
     
     func setupRemoteCommandCenter() {
         let commandCenter = MPRemoteCommandCenter.shared();
-                commandCenter.playCommand.isEnabled = true
+        commandCenter.playCommand.isEnabled = true
         commandCenter.playCommand.addTarget {[weak self] event in
             guard let `self` = self else {
                 return .commandFailed
@@ -174,8 +174,8 @@ class Radio: ObservableObject {
             self.radioDelegate?.radioToggled()
             return .success
         }
-        commandCenter.pauseCommand.isEnabled = true
-        commandCenter.pauseCommand.addTarget {[weak self] event in
+        commandCenter.stopCommand.isEnabled = true
+        commandCenter.stopCommand.addTarget {[weak self] event in
             guard let `self` = self else {
                 return .commandFailed
             }
