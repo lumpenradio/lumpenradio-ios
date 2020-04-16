@@ -18,6 +18,7 @@ fileprivate let NOW_PLAYING_ARTWORK_IMG = "AppIcon"
 
 protocol RadioDelegate {
     func radioToggled()
+    func shouldEnableButton(_ enableButton: Bool)
 }
 
 // UIKit Version
@@ -43,6 +44,7 @@ class Radio: ObservableObject {
     }
     
     @objc func introHasPlayed() {
+        self.radioDelegate?.shouldEnableButton(true)
         // Set that the intro has been played already for this session
         UserDefaults.standard.set(false, forKey: USERDEFAULTS_KEY_RADIO_INTRO)
         
@@ -75,6 +77,7 @@ class Radio: ObservableObject {
                                                        object: self.player?.currentItem)
                 
                 self.player?.play()
+                self.radioDelegate?.shouldEnableButton(false)
             } else {
                 startRadio()
                 setupNowPlaying()

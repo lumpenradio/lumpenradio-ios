@@ -14,6 +14,7 @@ class MainViewController: UIViewController, RadioDelegate {
     private var radio: Radio?
     private var player: AVPlayer?
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var radioButton: UIButton!
     
     private let IMAGE_BACKGROUND_ON = "background_on.jpg"
     private let IMAGE_BACKGROUND_NORMAL = "background.jpg"
@@ -49,6 +50,10 @@ class MainViewController: UIViewController, RadioDelegate {
     
     func radioToggled() {
         toggleVideo()
+    }
+    
+    func shouldEnableButton(_ enableButton: Bool) {
+        radioButton.isEnabled = enableButton
     }
     
     private func registerAppLifeCycleEvents() {
