@@ -52,6 +52,8 @@ class MainViewController: UIViewController, RadioDelegate {
         toggleVideo()
     }
     
+    // Disables or enables the radio button from user interaction
+    // Useful for when intro audio plays
     func shouldEnableButton(_ enableButton: Bool) {
         radioButton.isEnabled = enableButton
     }

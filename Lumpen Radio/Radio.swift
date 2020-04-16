@@ -43,6 +43,8 @@ class Radio: ObservableObject {
         self.radioDelegate = radioDelegate
     }
     
+    // Callback via observer for when intro audio is done playing
+    // Sets the UserDefault which indicates that said audio has played
     @objc func introHasPlayed() {
         self.radioDelegate?.shouldEnableButton(true)
         // Set that the intro has been played already for this session
@@ -57,32 +59,30 @@ class Radio: ObservableObject {
     func toggleRadio() {
         if self.isPlaying {
             stopRadio()
+        } else if !UserDefaults.standard.bool(forKey: USERDEFAULTS_KEY_RADIO_INTRO) {
+            startRadio()
+            setupNowPlaying()
+            setupRemoteCommandCenter()
         } else {
-            if UserDefaults.standard.bool(forKey: USERDEFAULTS_KEY_RADIO_INTRO) {
-                // Play intro
-                guard let url = Bundle.main.url(forResource: RADIO_INTRO_FILENAME,
-                                                withExtension: RADIO_INTRO_FILETYPE) else {
-                    UserDefaults.standard.set(false,
-                                              forKey: USERDEFAULTS_KEY_RADIO_INTRO)
-                    toggleRadio()
-                    return
-                }
-                let playerItem = AVPlayerItem(url: url)
-                self.player = AVPlayer(playerItem: playerItem)
-                
-                // Set observer
-                NotificationCenter.default.addObserver(self,
-                                                       selector: #selector(introHasPlayed),
-                                                       name: .AVPlayerItemDidPlayToEndTime,
-                                                       object: self.player?.currentItem)
-                
-                self.player?.play()
-                self.radioDelegate?.shouldEnableButton(false)
-            } else {
-                startRadio()
-                setupNowPlaying()
-                setupRemoteCommandCenter()
+            // Play intro
+            guard let url = Bundle.main.url(forResource: RADIO_INTRO_FILENAME,
+                                            withExtension: RADIO_INTRO_FILETYPE) else {
+                UserDefaults.standard.set(false,
+                                          forKey: USERDEFAULTS_KEY_RADIO_INTRO)
+                toggleRadio()
+                return
             }
+            let playerItem = AVPlayerItem(url: url)
+            self.player = AVPlayer(playerItem: playerItem)
+            
+            // Set observer
+            NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(introHasPlayed),
+                                                   name: .AVPlayerItemDidPlayToEndTime,
+                                                   object: self.player?.currentItem)
+            
+            self.player?.play()
+            self.radioDelegate?.shouldEnableButton(false)
         }
         
         self.radioDelegate?.radioToggled()
