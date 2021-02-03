@@ -11,7 +11,7 @@ import AVFoundation
 import MediaPlayer
 
 // Constants
-fileprivate let LUMPEN_AUDIO_URL: String = "http://mensajito.mx:8000/lumpen"
+fileprivate let LUMPEN_AUDIO_URL: String = "https://radio.mensajito.mx/lumpenradio"
 fileprivate let NOW_PLAYING_TITLE = "Lumpen Radio"
 fileprivate let NOW_PLAYING_ALBUM_TITLE = "WLPN 105.5 FM Chicago"
 fileprivate let NOW_PLAYING_ARTWORK_IMG = "AppIcon"
