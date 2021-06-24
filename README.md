@@ -1,4 +1,6 @@
-# Lumpen Radio
+# Lumpen Radio (iOS)
+
+Available on the [iOS App Store](https://apps.apple.com/us/app/lumpen/id1494420362)
 
 ## Tag Schema
 Follows [Semantic Versioning](https://semver.org/)
